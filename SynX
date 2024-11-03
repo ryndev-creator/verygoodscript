@@ -1,0 +1,403 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SynX = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UpFrame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local exit = Instance.new("ImageButton")
+local ImageButton = Instance.new("ImageButton")
+local mini = Instance.new("ImageButton")
+local ImageButton_2 = Instance.new("ImageButton")
+local ImageButton_3 = Instance.new("ImageButton")
+local ImageButton_4 = Instance.new("ImageButton")
+local ImageButton_5 = Instance.new("ImageButton")
+local grame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextBox = Instance.new("TextBox")
+local Lines = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local clear = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ImageButton_6 = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local exec = Instance.new("TextButton")
+local ImageButton_7 = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local show = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+SynX.Name = "SynX"
+SynX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SynX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SynX.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = SynX
+Main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0818399042, 0, 0.0540540554, 0)
+Main.Size = UDim2.new(0, 647, 0, 306)
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = Main
+
+UpFrame.Name = "UpFrame"
+UpFrame.Parent = Main
+UpFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpFrame.BackgroundTransparency = 1.000
+UpFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UpFrame.BorderSizePixel = 0
+UpFrame.Position = UDim2.new(0.0125448471, 0, 0.032388676, 0)
+UpFrame.Size = UDim2.new(0, 626, 0, 31)
+
+ImageLabel.Parent = UpFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 124, 0, 24)
+ImageLabel.Image = "rbxassetid://99340168613016"
+
+exit.Name = "exit"
+exit.Parent = UpFrame
+exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+exit.BackgroundTransparency = 1.000
+exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exit.BorderSizePixel = 0
+exit.Position = UDim2.new(0.961661339, 0, 0, 0)
+exit.Size = UDim2.new(0, 24, 0, 18)
+exit.Image = "rbxassetid://97891422008503"
+exit.ScaleType = Enum.ScaleType.Fit
+
+ImageButton.Parent = UpFrame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.923322678, 0, 0, 0)
+ImageButton.Size = UDim2.new(0, 24, 0, 18)
+ImageButton.Image = "rbxassetid://124672510633253"
+ImageButton.ScaleType = Enum.ScaleType.Fit
+
+mini.Name = "mini"
+mini.Parent = UpFrame
+mini.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mini.BackgroundTransparency = 1.000
+mini.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mini.BorderSizePixel = 0
+mini.Position = UDim2.new(0.884984016, 0, 0, 0)
+mini.Size = UDim2.new(0, 24, 0, 18)
+mini.Image = "rbxassetid://110668441412113"
+mini.ScaleType = Enum.ScaleType.Fit
+
+ImageButton_2.Parent = UpFrame
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.BackgroundTransparency = 1.000
+ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_2.BorderSizePixel = 0
+ImageButton_2.Position = UDim2.new(0.36741215, 0, 0.0322580636, 0)
+ImageButton_2.Size = UDim2.new(0, 23, 0, 17)
+ImageButton_2.Image = "rbxassetid://82032107421678"
+
+ImageButton_3.Parent = UpFrame
+ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_3.BackgroundTransparency = 1.000
+ImageButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_3.BorderSizePixel = 0
+ImageButton_3.Position = UDim2.new(0.418530345, 0, 0, 0)
+ImageButton_3.Size = UDim2.new(0, 20, 0, 18)
+ImageButton_3.Image = "rbxassetid://96791907128915"
+
+ImageButton_4.Parent = UpFrame
+ImageButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_4.BackgroundTransparency = 1.000
+ImageButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_4.BorderSizePixel = 0
+ImageButton_4.Position = UDim2.new(0.466453671, 0, 0.0322580636, 0)
+ImageButton_4.Size = UDim2.new(0, 17, 0, 17)
+ImageButton_4.Image = "rbxassetid://121775668109380"
+
+ImageButton_5.Parent = UpFrame
+ImageButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_5.BackgroundTransparency = 1.000
+ImageButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_5.BorderSizePixel = 0
+ImageButton_5.Position = UDim2.new(0.51118201, 0, 0, 0)
+ImageButton_5.Size = UDim2.new(0, 21, 0, 18)
+ImageButton_5.Image = "rbxassetid://82563519820603"
+
+grame.Name = "grame"
+grame.Parent = Main
+grame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+grame.BackgroundTransparency = 1.000
+grame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+grame.BorderSizePixel = 0
+grame.Position = UDim2.new(0.0107526584, 0, 0.155896902, 0)
+grame.Size = UDim2.new(0, 634, 0, 36)
+
+TextButton.Parent = grame
+TextButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0110410098, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 127, 0, 28)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Script 1"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+UICorner_2.Parent = TextButton
+
+TextButton_2.Parent = TextButton
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.677165329, 0, 0.107142858, 0)
+TextButton_2.Size = UDim2.new(0, 41, 0, 21)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "x"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 16.000
+
+TextButton_3.Parent = grame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.198738173, 0, -0.027777778, 0)
+TextButton_3.Size = UDim2.new(0, 53, 0, 28)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "+"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+
+UICorner_3.Parent = TextButton_3
+
+ScrollingFrame.Parent = Main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.825245321, 0, 0.244132146, 0)
+ScrollingFrame.Size = UDim2.new(0, 100, 0, 219)
+ScrollingFrame.ScrollBarThickness = 6
+ScrollingFrame.VerticalScrollBarInset = Enum.ScrollBarInset.Always
+ScrollingFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0666406751, 0, 0.271241844, 0)
+TextBox.Size = UDim2.new(0, 483, 0, 179)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+Lines.Name = "Lines"
+Lines.Parent = Main
+Lines.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Lines.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lines.BorderSizePixel = 0
+Lines.Position = UDim2.new(0.0163965952, 0, 0.268268466, 0)
+Lines.Size = UDim2.new(0, 24, 0, 179)
+Lines.Font = Enum.Font.SourceSans
+Lines.Text = "1"
+Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lines.TextSize = 14.000
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0125448471, 0, 0.856248856, 0)
+Frame.Size = UDim2.new(0, 631, 0, 34)
+
+clear.Name = "clear"
+clear.Parent = Frame
+clear.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clear.BorderSizePixel = 0
+clear.Position = UDim2.new(0.507131457, 0, 0.264705896, 0)
+clear.Size = UDim2.new(0, 95, 0, 23)
+clear.Font = Enum.Font.SourceSans
+clear.Text = "Clear"
+clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+clear.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = clear
+
+ImageButton_6.Parent = clear
+ImageButton_6.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ImageButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_6.BorderSizePixel = 0
+ImageButton_6.Position = UDim2.new(-0.00343660056, 0, 0, 0)
+ImageButton_6.Size = UDim2.new(0, 27, 0, 22)
+ImageButton_6.Image = "rbxassetid://113027240930004"
+ImageButton_6.ImageTransparency = 0.500
+ImageButton_6.ScaleType = Enum.ScaleType.Fit
+
+UICorner_5.Parent = ImageButton_6
+
+exec.Name = "exec"
+exec.Parent = Frame
+exec.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+exec.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exec.BorderSizePixel = 0
+exec.Position = UDim2.new(0.671949208, 0, 0.264705896, 0)
+exec.Size = UDim2.new(0, 95, 0, 23)
+exec.Font = Enum.Font.SourceSans
+exec.Text = "Execute"
+exec.TextColor3 = Color3.fromRGB(255, 255, 255)
+exec.TextSize = 14.000
+
+ImageButton_7.Parent = exec
+ImageButton_7.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+ImageButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_7.BorderSizePixel = 0
+ImageButton_7.Position = UDim2.new(-0.00343660056, 0, 0, 0)
+ImageButton_7.Size = UDim2.new(0, 27, 0, 22)
+ImageButton_7.Image = "rbxassetid://129063635722313"
+ImageButton_7.ImageTransparency = 0.500
+ImageButton_7.ScaleType = Enum.ScaleType.Fit
+
+UICorner_6.Parent = ImageButton_7
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = exec
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.00792392995, 0, 0.382352948, 0)
+ImageLabel_2.Size = UDim2.new(0, 19, 0, 19)
+ImageLabel_2.Image = "rbxassetid://123463852534297"
+
+show.Name = "show"
+show.Parent = SynX
+show.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+show.BorderColor3 = Color3.fromRGB(0, 0, 0)
+show.BorderSizePixel = 0
+show.Position = UDim2.new(0.708482683, 0, 0.605651081, 0)
+show.Size = UDim2.new(0, 48, 0, 47)
+show.Image = "rbxassetid://94634618857572"
+show.ScaleType = Enum.ScaleType.Fit
+show.SliceScale = 0.500
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = show
+
+-- Scripts:
+
+local function QMPOSYV_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local fr = script.Parent
+	
+	
+	local frame = fr:WaitForChild("Frame")
+	local clear = frame:WaitForChild("clear")
+	local exec = frame:WaitForChild("exec")
+	local tx = fr:WaitForChild("TextBox")
+	
+	
+	local function executeCode()
+		local code = tx.Text
+	
+		if code == "printidentity()" then
+			loadstring('print("Current identity is 7")')()
+		elseif code == "print(identifyexecutor())" then
+			loadstring('print("SynX")')()
+		elseif code == "warn(identifyexecutor())" then
+			loadstring('warn("SynX")')()
+		elseif code == "error(identifyexecutor())" then
+			loadstring('error("SynX")')()
+		elseif code == "print(getexecutorname())" then
+			loadstring('print("SynX")')()
+		elseif code == "warn(getexecutorname())" then
+			loadstring('warn("SynX")')()
+		elseif code == "error(getexecutorname())" then
+			loadstring('error("SynX")')()
+		else
+			local func, err = loadstring(code)
+			if func then
+				func()
+			else
+	
+			end
+		end
+	end
+	
+	exec.MouseButton1Click:Connect(executeCode)
+	
+	
+	clear.MouseButton1Click:Connect(function()
+		tx.Text = ""
+	end)
+end
+coroutine.wrap(QMPOSYV_fake_script)()
+local function XBUXNI_fake_script() -- SynX.LocalScript 
+	local script = Instance.new('LocalScript', SynX)
+
+	local sg = script.Parent
+	local frame = sg:WaitForChild("Main")
+	local uf = frame:WaitForChild("UpFrame")
+	local x = uf:WaitForChild("exit")
+	local s = sg:WaitForChild("show")
+	local minimizereal = frame:WaitForChild("UpFrame"):WaitForChild("mini")
+	
+	sg.Enabled = true
+	frame.Draggable = true
+	frame.Active = true
+	s.Visible = false 
+	
+	
+	local function destroy()
+		sg:Destroy()
+		print("WHY U DESTROYED SYN X V3 :((((((((((((((((((((")
+	end
+	
+	
+	x.MouseButton1Click:Connect(destroy)
+	
+	
+	local function showFrame()
+		frame.Visible = true
+		s.Visible = false
+	end
+	s.MouseButton1Click:Connect(showFrame)
+	
+	
+	local function minimizeFrame()
+		frame.Visible = false
+		s.Visible = true
+	end
+	minimizereal.MouseButton1Click:Connect(minimizeFrame)
+	
+end
+coroutine.wrap(XBUXNI_fake_script)()
