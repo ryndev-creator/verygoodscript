@@ -712,7 +712,7 @@ local function RLHQZP_fake_script() -- main.LocalScript
 			if func then
 				func()
 			else
-				
+				print("Cristall error")
 			end
 		end
 	end
