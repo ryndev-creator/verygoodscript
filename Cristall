@@ -1016,8 +1016,7 @@ local function ZZRF_fake_script() -- Krampus.LocalScript
 	destroyButton.MouseButton1Click:Connect(robloxis)
 	
 	local function sx()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ryndev-creator/verygoodscript/refs/heads/main/SynX"))()
-		screenGui:Destroy()
+		
 	end
 	
 	syn.MouseButton1Click:Connect(sx)
