@@ -1,0 +1,346 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UpPanel = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local close = Instance.new("ImageButton")
+local maximize = Instance.new("ImageButton")
+local Minimize = Instance.new("ImageButton")
+local Code = Instance.new("ImageButton")
+local sc = Instance.new("ImageButton")
+local settings = Instance.new("ImageButton")
+local themes = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local CodeFrame = Instance.new("Frame")
+local Scripts = Instance.new("Frame")
+local resisebox = Instance.new("ImageLabel")
+local Execute = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ExecuteIcon = Instance.new("ImageButton")
+local Clear = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ClearIcon = Instance.new("ImageButton")
+local Lines = Instance.new("TextLabel")
+local ScriptHub = Instance.new("Frame")
+local InfYieldSc = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local InfYieldBt = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local show = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Main.BorderColor3 = Color3.fromRGB(55, 55, 55)
+Main.Position = UDim2.new(0.175346419, 0, 0.225642428, 0)
+Main.Size = UDim2.new(0, 760, 0, 529)
+Main.Visible = false
+Main.ZIndex = 3
+
+UICorner.Parent = Main
+
+UpPanel.Name = "UpPanel"
+UpPanel.Parent = Main
+UpPanel.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+UpPanel.BackgroundTransparency = 1.000
+UpPanel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UpPanel.BorderSizePixel = 0
+UpPanel.Size = UDim2.new(0, 760, 0, 40)
+
+Title.Name = "Title"
+Title.Parent = UpPanel
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.02074074, 0, 0, 0)
+Title.Size = UDim2.new(0, 67, 0, 40)
+Title.Font = Enum.Font.Gotham
+Title.Text = "SYREN IDE"
+Title.TextColor3 = Color3.fromRGB(250, 250, 250)
+Title.TextSize = 14.000
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+close.Name = "close"
+close.Parent = UpPanel
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0.955893159, 0, 0.275000006, 0)
+close.Size = UDim2.new(0, 21, 0, 17)
+close.Image = "rbxassetid://97891422008503"
+close.ImageTransparency = 0.300
+
+maximize.Name = "maximize"
+maximize.Parent = UpPanel
+maximize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+maximize.BackgroundTransparency = 1.000
+maximize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+maximize.BorderSizePixel = 0
+maximize.Position = UDim2.new(0.918856144, 0, 0.25, 0)
+maximize.Size = UDim2.new(0, 18, 0, 17)
+maximize.Image = "rbxassetid://124672510633253"
+maximize.ImageTransparency = 0.300
+
+Minimize.Name = "Minimize"
+Minimize.Parent = UpPanel
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.880744636, 0, 0.275000006, 0)
+Minimize.Size = UDim2.new(0, 21, 0, 17)
+Minimize.Image = "rbxassetid://110668441412113"
+
+Code.Name = "Code"
+Code.Parent = UpPanel
+Code.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Code.BackgroundTransparency = 1.000
+Code.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Code.BorderSizePixel = 0
+Code.Position = UDim2.new(0.409054607, 0, 0.25, 0)
+Code.Size = UDim2.new(0, 22, 0, 19)
+Code.Image = "rbxassetid://82032107421678"
+
+sc.Name = "sc"
+sc.Parent = UpPanel
+sc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sc.BackgroundTransparency = 1.000
+sc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sc.BorderSizePixel = 0
+sc.Position = UDim2.new(0.450370371, 0, 0.224999994, 0)
+sc.Size = UDim2.new(0, 22, 0, 19)
+sc.Image = "rbxassetid://121775668109380"
+
+settings.Name = "settings"
+settings.Parent = UpPanel
+settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+settings.BackgroundTransparency = 1.000
+settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+settings.BorderSizePixel = 0
+settings.Position = UDim2.new(0.499259263, 0, 0.224999994, 0)
+settings.Size = UDim2.new(0, 22, 0, 19)
+settings.Image = "rbxassetid://82563519820603"
+
+themes.Name = "themes"
+themes.Parent = UpPanel
+themes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+themes.BackgroundTransparency = 1.000
+themes.BorderColor3 = Color3.fromRGB(0, 0, 0)
+themes.BorderSizePixel = 0
+themes.Position = UDim2.new(0.546666682, 0, 0.224999994, 0)
+themes.Size = UDim2.new(0, 22, 0, 19)
+themes.Image = "rbxassetid://96791907128915"
+
+TextLabel.Parent = UpPanel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.409210533, 0, 0.699999988, 0)
+TextLabel.Size = UDim2.new(0, 28, 0, -1)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+
+CodeFrame.Name = "CodeFrame"
+CodeFrame.Parent = Main
+CodeFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CodeFrame.BackgroundTransparency = 1.000
+CodeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CodeFrame.BorderSizePixel = 0
+CodeFrame.Position = UDim2.new(0, 0, 0.0756143704, 0)
+CodeFrame.Size = UDim2.new(0, 760, 0, 489)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = CodeFrame
+Scripts.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Scripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.752473712, 0, 0.0392004214, 0)
+Scripts.Size = UDim2.new(0, 179, 0, 462)
+
+resisebox.Name = "resisebox"
+resisebox.Parent = Scripts
+resisebox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+resisebox.BackgroundTransparency = 1.000
+resisebox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+resisebox.BorderSizePixel = 0
+resisebox.Position = UDim2.new(0.843575418, 0, 0.949671686, 0)
+resisebox.Size = UDim2.new(0, 28, 0, 23)
+resisebox.Image = "rbxassetid://90022670931349"
+
+Execute.Name = "Execute"
+Execute.Parent = CodeFrame
+Execute.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.018421052, 0, 0.924385607, 0)
+Execute.Size = UDim2.new(0, 128, 0, 30)
+Execute.Font = Enum.Font.Gotham
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 14.000
+
+UICorner_2.Parent = Execute
+
+ExecuteIcon.Name = "ExecuteIcon"
+ExecuteIcon.Parent = Execute
+ExecuteIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteIcon.BackgroundTransparency = 1.000
+ExecuteIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteIcon.BorderSizePixel = 0
+ExecuteIcon.Position = UDim2.new(0.0625, 0, 0.233333334, 0)
+ExecuteIcon.Size = UDim2.new(0, 16, 0, 15)
+ExecuteIcon.Image = "http://www.roblox.com/asset/?id=130480739890547"
+
+Clear.Name = "Clear"
+Clear.Parent = CodeFrame
+Clear.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.196052626, 0, 0.922495246, 0)
+Clear.Size = UDim2.new(0, 128, 0, 30)
+Clear.Font = Enum.Font.Gotham
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextSize = 14.000
+
+UICorner_3.Parent = Clear
+
+ClearIcon.Name = "ClearIcon"
+ClearIcon.Parent = Clear
+ClearIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClearIcon.BackgroundTransparency = 1.000
+ClearIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClearIcon.BorderSizePixel = 0
+ClearIcon.Position = UDim2.new(0.0625, 0, 0.233333334, 0)
+ClearIcon.Size = UDim2.new(0, 16, 0, 15)
+ClearIcon.Image = "rbxassetid://86747265501806"
+
+Lines.Name = "Lines"
+Lines.Parent = CodeFrame
+Lines.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lines.BackgroundTransparency = 1.000
+Lines.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lines.BorderSizePixel = 0
+Lines.Position = UDim2.new(0.0105263162, 0, 0.0821281672, 0)
+Lines.Size = UDim2.new(0, 22, 0, 417)
+Lines.Font = Enum.Font.SourceSans
+Lines.Text = "1"
+Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lines.TextSize = 14.000
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = Main
+ScriptHub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ScriptHub.BackgroundTransparency = 1.000
+ScriptHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptHub.BorderSizePixel = 0
+ScriptHub.Position = UDim2.new(0, 0, 0.0775047243, 0)
+ScriptHub.Size = UDim2.new(0, 760, 0, 488)
+ScriptHub.Visible = false
+
+InfYieldSc.Name = "InfYieldSc"
+InfYieldSc.Parent = ScriptHub
+InfYieldSc.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+InfYieldSc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfYieldSc.BorderSizePixel = 0
+InfYieldSc.Position = UDim2.new(0.0197368413, 0, 0.0122950822, 0)
+InfYieldSc.Size = UDim2.new(0, 232, 0, 179)
+
+ImageLabel.Parent = InfYieldSc
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 232, 0, 158)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+InfYieldBt.Name = "InfYieldBt"
+InfYieldBt.Parent = InfYieldSc
+InfYieldBt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfYieldBt.BackgroundTransparency = 1.000
+InfYieldBt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfYieldBt.BorderSizePixel = 0
+InfYieldBt.Position = UDim2.new(0.903017223, 0, 0.882681549, 0)
+InfYieldBt.Size = UDim2.new(0, 22, 0, 20)
+InfYieldBt.Image = "http://www.roblox.com/asset/?id=130480739890547"
+
+TextLabel_2.Parent = InfYieldSc
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.882681549, 0)
+TextLabel_2.Size = UDim2.new(0, 101, 0, 21)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Infinite Yield"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+show.Name = "show"
+show.Parent = ScreenGui
+show.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+show.BorderColor3 = Color3.fromRGB(0, 0, 0)
+show.BorderSizePixel = 0
+show.Position = UDim2.new(0.957510471, 0, 0.926203191, 0)
+show.Size = UDim2.new(0, 64, 0, 61)
+show.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = show
+
+-- Scripts:
+
+local function OOQI_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local main = script.Parent
+	local CodeF = main:WaitForChild("CodeFrame")
+	local ScF = main:WaitForChild("ScriptHub")
+	local up = main:WaitForChild("UpPanel")
+	local sc = up:WaitForChild("sc")
+	local code = up:WaitForChild("Code")
+	
+	sc.MouseButton1Click:Connect(function() 
+		CodeF.Visible = false
+	ScF.Visible = true
+	end)
+	
+	code.MouseButton1Click:Connect(function() 
+		CodeF.Visible = true
+	ScF.Visible = false
+	end)
+	
+	
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(OOQI_fake_script)()
+local function VMOMZO_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local sg = script.Parent
+	local main = script.Parent:WaitForChild("Main")
+	local up = main:WaitForChild("UpPanel")
+	local closed = up:WaitForChild("close")
+	
+	closed.Mouse1ButtonClick:Connect(function()
+		sg:Destroy()
+	end)
+end
+coroutine.wrap(VMOMZO_fake_script)()
